@@ -1,3 +1,9 @@
+Requirements to build (installed via homebrew):
+
+postgresql
+python
+
+
 Checkout the homebrew tap somewhere;
 
 ```
@@ -40,7 +46,7 @@ deactivate
 ```
 
 ```
-brew edit ansibleINZ and replace the resource section with the output from poet above.
+brew edit ansibleINZ and replace the resource section with the output from poet above. You may need to manually remove the ansible resource.
 brew install --build-bottle ansibleINZ
 brew bottle ansibleINZ
 ```
