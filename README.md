@@ -34,7 +34,7 @@ poet ansible -a ara -a docker-py -a python-neutronclient \
   -a shade -a pywinrm -a kerberos -a xmltodict -a boto \
   -a botocore -a apache-libcloud -a python-keyczar \
   -a passlib -a zabbix-api -a junos-eznc -a jxmlease -a dnspython \
-  -a pysphere -a python-consul python-vagrant \
+  -a pysphere -a python-consul -a python-vagrant \
   -a molecule -a psycopg2
 ```
 

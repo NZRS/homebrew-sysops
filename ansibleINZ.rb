@@ -15,8 +15,8 @@ class Ansibleinz < Formula
   bottle do
     root_url "http://vagrant.nzrs.net.nz"
     cellar :any
-    rebuild 6
-    sha256 "abc4e057a95e2f2ffbe4ac752df379a068101f2e361a60fbce188efae0c25558" => :high_sierra
+    rebuild 7
+    sha256 "a0592f7f6059ecd5ccb1d94e78e38c4f7bbfbea90d0544de8f5ead78d1a3e486" => :high_sierra
   end
 
   resource "alembic" do
@@ -50,8 +50,8 @@ class Ansibleinz < Formula
   end
 
   resource "arrow" do
-    url "https://files.pythonhosted.org/packages/54/db/76459c4dd3561bbe682619a5c576ff30c42e37c2e01900ed30a501957150/arrow-0.10.0.tar.gz"
-    sha256 "805906f09445afc1f0fc80187db8fe07670e3b25cdafa09b8d8ac264a8c0c722"
+    url "https://files.pythonhosted.org/packages/90/48/7ecfce4f2830f59dfacbb2b5a31e3ff1112b731a413724be40f57faa4450/arrow-0.12.0.tar.gz"
+    sha256 "a15ecfddf334316e3ac8695e48c15d1be0d6038603b33043930dcf0e675c86ee"
   end
 
   resource "asn1crypto" do
@@ -59,9 +59,19 @@ class Ansibleinz < Formula
     sha256 "0874981329cfebb366d6584c3d16e913f2a0eb026c9463efcc4aaf42a9d94d70"
   end
 
+  resource "attrs" do
+    url "https://files.pythonhosted.org/packages/3f/a4/d0db68156abbdee228ce69a786ecb512da40b36b1289aadb9e3f9fd45121/attrs-17.3.0.tar.gz"
+    sha256 "c78f53e32d7cf36d8597c8a2c7e3c0ad210f97b9509e152e4c37fa80869f823c"
+  end
+
   resource "Babel" do
     url "https://files.pythonhosted.org/packages/5a/22/63f1dbb8514bb7e0d0c8a85cc9b14506599a075e231985f98afd70430e1f/Babel-2.5.1.tar.gz"
     sha256 "6007daf714d0cd5524bbe436e2d42b3c20e68da66289559341e48d2cd6d25811"
+  end
+
+  resource "backports.functools_lru_cache" do
+    url "https://files.pythonhosted.org/packages/87/77/5b2fd33e46c8ed4d67b45337d9f7bb27d1a1d577536470b39c267b5ce093/backports.functools_lru_cache-1.2.1.tar.gz"
+    sha256 "1c20e07f1a8a36a19d5d258b6b076e588d78d8fc7c2c4487ffe3a280f55a7bd1"
   end
 
   resource "backports.ssl_match_hostname" do
@@ -85,8 +95,8 @@ class Ansibleinz < Formula
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/17/72/d8c0e46c690eab58c4a778450bada1541100222320cf10a06ddac8920d75/botocore-1.8.1.tar.gz"
-    sha256 "257f3f85bc292ce4569a3232a4f3b5b07d411d1b51f901218339057682c45d2b"
+    url "https://files.pythonhosted.org/packages/31/01/8af6e1cf7943b54b7a8bad8e9270561035d00b72b430b2ac7daaff13902f/botocore-1.8.6.tar.gz"
+    sha256 "58db28effd55b603cb668065cf868804b7ff5680986b79516b5f48600d39819b"
   end
 
   resource "certifi" do
@@ -140,8 +150,8 @@ class Ansibleinz < Formula
   end
 
   resource "cryptography" do
-    url "https://files.pythonhosted.org/packages/f3/7c/ec4f94489719803cb14d35e9625d1f5a613b9c4b8d01ee52a4c77485e681/cryptography-2.1.3.tar.gz"
-    sha256 "68a26c353627163d74ee769d4749f2ee243866e9dac43c93bb33ebd8fbed1199"
+    url "https://files.pythonhosted.org/packages/78/c5/7188f15a92413096c93053d5304718e1f6ba88b818357d05d19250ebff85/cryptography-2.1.4.tar.gz"
+    sha256 "e4d967371c5b6b2e67855066471d844c5d52d210c36c28d49a8507b96e2c5291"
   end
 
   resource "debtcollector" do
@@ -290,8 +300,8 @@ class Ansibleinz < Formula
   end
 
   resource "jsonpatch" do
-    url "https://files.pythonhosted.org/packages/36/de/499bea7aac917f86eb5be148f631c3ddced4e60c8d119d63939c53a5ab5b/jsonpatch-1.16.tar.gz"
-    sha256 "f025c28a08ce747429ee746bb21796c3b6417ec82288f8fe6514db7398f2af8a"
+    url "https://files.pythonhosted.org/packages/7e/32/f548f7b2b4862fbedf74075903a81670a5c5f6c55281eab6db2743e6bada/jsonpatch-1.20.tar.gz"
+    sha256 "b12594a0cfe634bdd2a5c027250af2dd84932d493568e88ae722871edc3eb02d"
   end
 
   resource "jsonpointer" do
@@ -325,8 +335,8 @@ class Ansibleinz < Formula
   end
 
   resource "keystoneauth1" do
-    url "https://files.pythonhosted.org/packages/19/05/00048afb5697ac54c0aad757ec8679f471040683e772039ef2977ab00a32/keystoneauth1-3.2.0.tar.gz"
-    sha256 "768036ee66372df2ad56716b8be4965cef9a59a01647992919516defb282e365"
+    url "https://files.pythonhosted.org/packages/b3/07/f7f64fec22a7ca9377b1b1a44130b5186443f62a7ae79a630f8e0c208cf4/keystoneauth1-3.3.0.tar.gz"
+    sha256 "c8db2d2f53c0d623f9a51bf18133ee0e2eae121b9c6bf08136f9a664ae469ded"
   end
 
   resource "linecache2" do
@@ -454,6 +464,11 @@ class Ansibleinz < Formula
     sha256 "3d132465a75b57aa818341c6521392a06cc660feb3988d7f1074f39bd23c9a92"
   end
 
+  resource "pluggy" do
+    url "https://files.pythonhosted.org/packages/11/bf/cbeb8cdfaffa9f2ea154a30ae31a9d04a1209312e2919138b4171a1f8199/pluggy-0.6.0.tar.gz"
+    sha256 "7f8ae7f5bdf75671a718d2daf0a64b7885f74510bcd98b1a0bb420eb9a9d0cff"
+  end
+
   resource "positional" do
     url "https://files.pythonhosted.org/packages/24/7e/3b1450db76eb48a54ea661a43ae00950275e11840042c5217bd3b47b478e/positional-1.2.1.tar.gz"
     sha256 "cf48ea169f6c39486d5efa0ce7126a97bed979a52af6261cf255a41f9a74453a"
@@ -550,8 +565,8 @@ class Ansibleinz < Formula
   end
 
   resource "pytest" do
-    url "https://files.pythonhosted.org/packages/1f/f8/8cd74c16952163ce0db0bd95fdd8810cbf093c08be00e6e665ebf0dc3138/pytest-3.2.5.tar.gz"
-    sha256 "6d5bd4f7113b444c55a3bbb5c738a3dd80d43563d063fc42dcb0aaefbdd78b81"
+    url "https://files.pythonhosted.org/packages/41/6f/ed63db45ad82db405c77c807d75d66311d385e1b6bf476ec46bde0c9462a/pytest-3.3.0.tar.gz"
+    sha256 "6db1c070aa412c30647b6aeb13c55670f900cf00fbafa003cdde560c3f4a8d76"
   end
 
   resource "python-consul" do
@@ -655,13 +670,13 @@ class Ansibleinz < Formula
   end
 
   resource "shade" do
-    url "https://files.pythonhosted.org/packages/dc/1e/d5fa685580858edef0f8da59f4e8973410f293276073e9abb4f43d190148/shade-1.24.0.tar.gz"
-    sha256 "0b65ea2e5d4015f572b9d87f49b4c4560c1441b1bc13c95ef9becdab539e1ffe"
+    url "https://files.pythonhosted.org/packages/97/5e/04492bc43d0dd159e06073953e82d87c20c5ad4280fe57f8d3025834fa62/shade-1.25.0.tar.gz"
+    sha256 "198334b464f5b4d31a5cd8c476101c8970950659c3a138c32e6ef5fae23a6e53"
   end
 
   resource "simplejson" do
-    url "https://files.pythonhosted.org/packages/e8/46/4ab77251fbe4af3091cdd8a38aa7d1c0b2082dd502735b9774614cf39c89/simplejson-3.12.0.tar.gz"
-    sha256 "df5e38f5e0a24abe0e02276aa5c3f8504150047a51c0b6b848b8153e6e6d395e"
+    url "https://files.pythonhosted.org/packages/0d/3f/3a16847fe5c010110a8f54dd8fe7b091b4e22922def374fe1cce9c1cb7e9/simplejson-3.13.2.tar.gz"
+    sha256 "4c4ecf20e054716cc1e5a81cadc44d3f4027108d8dd0861d8b1e3bd7a32d4f0a"
   end
 
   resource "six" do
