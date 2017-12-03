@@ -3,8 +3,8 @@ class Ansibleinz < Formula
 
   desc "Automate deployment, configuration, and upgrading"
   homepage "https://www.ansible.com/"
-  url "https://files.pythonhosted.org/packages/1a/53/6d6c0d46a8e6f6da7826eb57c1c755d183b2a766dd275e493daa447c6d8b/ansible-2.4.1.0.tar.gz"
-  sha256 "da61afb29cc5bd6bc4737a2da06e673fb6fccc3ae2685130d19ab3a8e404fb6a"
+  url "https://files.pythonhosted.org/packages/4f/65/ae3ad8589c38f9e04ebc8a824c2880eb4f9e603a1f62b5f5a3f938e524b0/ansible-2.4.2.0.tar.gz"
+  sha256 "315f1580b20bbc2c2f1104f8b5e548c6b4cac943b88711639c5e0d4dfc4d7658"
 
   depends_on :python
   depends_on "pkg-config" => :build
@@ -15,8 +15,8 @@ class Ansibleinz < Formula
   bottle do
     root_url "http://vagrant.nzrs.net.nz"
     cellar :any
-    rebuild 7
-    sha256 "a0592f7f6059ecd5ccb1d94e78e38c4f7bbfbea90d0544de8f5ead78d1a3e486" => :high_sierra
+    rebuild 8
+    sha256 "aedb4ce9de98c39fe22cffaf6227bd8fe7a6d65220187c4b0f3d05d356a50fff" => :high_sierra
   end
 
   resource "alembic" do
