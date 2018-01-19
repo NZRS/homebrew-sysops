@@ -6,7 +6,7 @@ class Ansibleinz < Formula
   url "https://files.pythonhosted.org/packages/4f/65/ae3ad8589c38f9e04ebc8a824c2880eb4f9e603a1f62b5f5a3f938e524b0/ansible-2.4.2.0.tar.gz"
   sha256 "315f1580b20bbc2c2f1104f8b5e548c6b4cac943b88711639c5e0d4dfc4d7658"
 
-  depends_on :python
+  depends_on "python"
   depends_on "pkg-config" => :build
 #  depends_on "postgresql" => :build
   depends_on "libyaml"
