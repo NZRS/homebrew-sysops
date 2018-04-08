@@ -20,12 +20,12 @@ mktmpenv
 # Install the package of interest as well as homebrew-pypi-poet
 ```
 pip install pbr==3.0.1
-pip install Jinja2==2.9.6
+pip install Jinja2==2.10
 pip install ansible ara docker-py python-neutronclient \
   shade pywinrm kerberos xmltodict boto \
   botocore apache-libcloud python-keyczar \
   passlib zabbix-api junos-eznc jxmlease dnspython \
-  pysphere python-consul python-vagrant \
+  boto3 pysphere python-consul python-vagrant \
   molecule psycopg2 homebrew-pypi-poet
 ```
 
@@ -35,7 +35,7 @@ poet ansible -a ara -a docker-py -a python-neutronclient \
   -a botocore -a apache-libcloud -a python-keyczar \
   -a passlib -a zabbix-api -a junos-eznc -a jxmlease -a dnspython \
   -a pysphere -a python-consul -a python-vagrant \
-  -a molecule -a psycopg2
+  -a molecule -a psycopg2 -a boto3
 ```
 
 
