@@ -3,8 +3,8 @@ class Ansibleinz < Formula
 
   desc "Automate deployment, configuration, and upgrading"
   homepage "https://www.ansible.com/"
-  url "https://files.pythonhosted.org/packages/d8/5f/3e7d8243159ba831942b851891d8eeac04615323a91e8447365aa7311299/ansible-2.5.2.tar.gz"
-  sha256 "a95483f3b33e0f97d03badaad073392ed03a2b2f526bec4ddf598edfc1c03ae5"
+  url "https://releases.ansible.com/ansible/ansible-2.5.3.tar.gz"
+  sha256 "0b34126dad0a77fce220d264ba5179221bbff82af5fda5de197dffb96171749c"
 
   depends_on "python@2"
   depends_on "pkg-config" => :build
@@ -15,8 +15,7 @@ class Ansibleinz < Formula
   bottle do
     root_url "http://vagrant.nzrs.net.nz"
     cellar :any
-    rebuild 2
-    sha256 "6cd89f0602dcad26c328c3174a0c7fd50a42cc2855e8de3e1199990ef88d62b5" => :high_sierra
+    sha256 "f23e46f87212872873acbc623593013929aca9e04236707b55f49ab830052574" => :high_sierra
   end
 
   resource "alembic" do
@@ -95,13 +94,13 @@ class Ansibleinz < Formula
   end
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/5f/bc/95c66f34b1cea18c69f98f34ba609edf4b9c494779c6e7bbbdb2f28d80d5/boto3-1.7.14.tar.gz"
-    sha256 "a2d5c0a007ff50b4a08f402925495e18e41e336d22767a2b4fa21913fa875b2f"
+    url "https://files.pythonhosted.org/packages/32/39/63a0fff7ad1e91e942f734fd9502b630f3e75684f5038bd6c9c5a1d713ee/boto3-1.7.24.tar.gz"
+    sha256 "c5942bb27d364625be6b0521e88ccfcd60a2d2b58b9b126748fb22d613693260"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/31/f3/d0af0c1087cb8d101d0b3d516e4c8f69219eaf3b0342c8d8c227fb0791c3/botocore-1.10.14.tar.gz"
-    sha256 "2d83993e60ba56ca3ddb48a0d4da86c1cfa1f687993abe760eeb0059d10e52f6"
+    url "https://files.pythonhosted.org/packages/88/bb/eee581cb40da8fece799502442037fc6f16b286c25cc8b7fbebfc6b08dac/botocore-1.10.24.tar.gz"
+    sha256 "b7a23361bcd6ce2d9cf56a3e5bc7c6b2e3233f3d902d41cb2dfb37472ea41986"
   end
 
   resource "Cerberus" do
@@ -345,8 +344,8 @@ class Ansibleinz < Formula
   end
 
   resource "keystoneauth1" do
-    url "https://files.pythonhosted.org/packages/7e/3e/79238e265b094afa93b11fa167503030962c1842cf13a8f6f9c346951298/keystoneauth1-3.5.0.tar.gz"
-    sha256 "0579c112df9ab6764d6e005b7bacbaf2524f7cfcf9a89cc041b2b72d00414268"
+    url "https://files.pythonhosted.org/packages/9a/0d/bf50992f3ad603a3051e5033bad82713e7c86a370acca0f5525e5517bf04/keystoneauth1-3.7.0.tar.gz"
+    sha256 "50ae1e3247f02d71a92b23dc5d19dac553a8c76bbdc9371c074d68d037ff84a1"
   end
 
   resource "linecache2" do
@@ -375,8 +374,8 @@ class Ansibleinz < Formula
   end
 
   resource "molecule" do
-    url "https://files.pythonhosted.org/packages/3b/0d/848628b335b13ed2e81e2acec79136c7cbede6afbb6a16b6249a120c404e/molecule-2.13.1.tar.gz"
-    sha256 "6aeea61fc0cf7bcb3c6b9760fdf3b0f53c07718424b7e31ba347f9f9f3828697"
+    url "https://files.pythonhosted.org/packages/b3/0f/e86effbdf07bf099cbf89e12de12a18a6b20afd09d092057d7675b570407/molecule-2.14.0.tar.gz"
+    sha256 "efc299033b3a552b4882078fb679edf4b6f5e44fb11600969a169eb6ec7ed422"
   end
 
   resource "monotonic" do
@@ -440,8 +439,8 @@ class Ansibleinz < Formula
   end
 
   resource "oslo.config" do
-    url "https://files.pythonhosted.org/packages/b4/0d/539499bb0c13bf10f398dad32ef4852a173aad3914453ed0c8386203db4b/oslo.config-6.2.0.tar.gz"
-    sha256 "135ae788d7a1bb57327364da9a6fd9225f053d33b9da0bbece9a146c8cc55802"
+    url "https://files.pythonhosted.org/packages/a8/b4/85f50eee25a65f6ce0dca6b4965cf8067bfe23c7c785aedd34b0bb94d042/oslo.config-6.2.1.tar.gz"
+    sha256 "c989f7441e5eea658482276d2f34d3c9d77089f4f723076efc442211c3256743"
   end
 
   resource "oslo.i18n" do
@@ -455,8 +454,8 @@ class Ansibleinz < Formula
   end
 
   resource "oslo.utils" do
-    url "https://files.pythonhosted.org/packages/e2/31/4a1b716dd899599df2a7fb7f1899fa2d6dc08da627d918d8321035567ac8/oslo.utils-3.36.1.tar.gz"
-    sha256 "baaffb9d1528bdb5677f8c67828c457d5c015249674a33c62e6a0dbddd9f0e58"
+    url "https://files.pythonhosted.org/packages/69/21/bde1fb98e77a0b4d82585c3808e13bfeff28917fb4f7af2f8a0e56530355/oslo.utils-3.36.2.tar.gz"
+    sha256 "9900be2bc8bf14c187731393dea672ea9579312d6f31b862e527999fde63f2c6"
   end
 
   resource "packaging" do
@@ -590,13 +589,13 @@ class Ansibleinz < Formula
   end
 
   resource "python-consul" do
-    url "https://files.pythonhosted.org/packages/7a/8f/9f8eaab8826a59e1beb0808ed77bbb4b8153679ef24c0ef27011f87e4d8b/python-consul-0.7.2.tar.gz"
-    sha256 "ef0b7c8a2d8efba5f9602f45aadbe5035e22a511d245624ed732af81223a6571"
+    url "https://files.pythonhosted.org/packages/3c/e2/5ca48069c98553181ae265968d312ed44df21b19050bf4bd4e3a67583300/python-consul-1.0.1.tar.gz"
+    sha256 "0feb7a14b6869bbfa9eb4868e823f040e3642b84e80c39ffdff3a8b7fd7017c4"
   end
 
   resource "python-dateutil" do
-    url "https://files.pythonhosted.org/packages/c5/39/4da7c2dbc4f023fba5fb2325febcadf0d0ce0efdc8bd12083a0f65d20653/python-dateutil-2.7.2.tar.gz"
-    sha256 "9d8074be4c993fbe4947878ce593052f71dac82932a677d49194d8ce9778002e"
+    url "https://files.pythonhosted.org/packages/a0/b0/a4e3241d2dee665fea11baec21389aec6886655cd4db7647ddf96c3fad15/python-dateutil-2.7.3.tar.gz"
+    sha256 "e27001de32f627c22380a688bcc43ce83504a7bc5da472209b4c70f02829f0b8"
   end
 
   resource "python-editor" do
@@ -695,8 +694,8 @@ class Ansibleinz < Formula
   end
 
   resource "simplejson" do
-    url "https://files.pythonhosted.org/packages/6c/ca/8776e0c494b7f16f98a4f40f1540ed6f7467f75280631d837e9cf3e5796e/simplejson-3.14.0.tar.gz"
-    sha256 "1ebbd84c2d7512f7ba65df0b9cc3cbc1bbd6ef9eab39fc9389dfe7e3681f7bd2"
+    url "https://files.pythonhosted.org/packages/8b/6c/c512c32124d1d2d67a32ff867bb3cdd5bfa6432660975f7ee753ed7ad886/simplejson-3.15.0.tar.gz"
+    sha256 "ad332f65d9551ceffc132d0a683f4ffd12e4bc7538681100190d577ced3473fb"
   end
 
   resource "six" do
@@ -715,8 +714,8 @@ class Ansibleinz < Formula
   end
 
   resource "subprocess32" do
-    url "https://files.pythonhosted.org/packages/b8/2f/49e53b0d0e94611a2dc624a1ad24d41b6d94d0f1b0a078443407ea2214c2/subprocess32-3.2.7.tar.gz"
-    sha256 "1e450a4a4c53bf197ad6402c564b9f7a53539385918ef8f12bdf430a61036590"
+    url "https://files.pythonhosted.org/packages/5e/d8/098a258748d4333019429d59fb5d82100429ce88cbeb19d5f06aad77f754/subprocess32-3.5.0.tar.gz"
+    sha256 "a24bac119f23fac0e53a3707b5539b214350ddd4d7d49c87d5f3be297ca1607a"
   end
 
   resource "tabulate" do
@@ -834,7 +833,7 @@ class Ansibleinz < Formula
 
     res = resources.map(&:name).to_set - ["ara", "molecule", "psycopg2", "yamllint", "pytest", "flake8", "ansible-lint", "pytz"]
     resource("psycopg2").stage do
-      system libexec/"bin/python", "setup.py", "build_ext", "--pg-config=/usr/local/Cellar/postgresql/10.3/bin/pg_config", "install"
+      system libexec/"bin/python", "setup.py", "build_ext", "--pg-config=/usr/local/Cellar/postgresql/10.4/bin/pg_config", "install"
     end
     venv.pip_install_and_link resource("ara")
     venv.pip_install_and_link resource("pytz")
