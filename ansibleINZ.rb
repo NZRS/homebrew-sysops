@@ -16,8 +16,9 @@ class Ansibleinz < Formula
   bottle do
     root_url "http://vagrant.nzrs.net.nz"
     cellar :any
-    sha256 "3843af0a986e38f60118789179a748321effb32bd226b254f8996af6e5f32e7e" => :high_sierra
-    sha256 "09c2e6e62cae480f92f8af75188077fa9a3671c85efbef6667f85d97904ae817" => :mojave
+    rebuild 1
+    sha256 "c05c185bb3850fc6513a871cd65d83c3898c2c4fb70bed803dba26870e6347c2" => :mojave
+    sha256 "00366e4d1e925b4111042d181ef86df258cb492c42486c5e9fc846bb8a74cfcb" => :high_sierra
   end
 
     resource "alembic" do
@@ -658,6 +659,11 @@ class Ansibleinz < Formula
   resource "python-vagrant" do
     url "https://files.pythonhosted.org/packages/bb/c6/0a6d22ae1782f261fc4274ea9385b85bf792129d7126575ec2a71d8aea18/python-vagrant-0.5.15.tar.gz"
     sha256 "af9a8a9802d382d45dbea96aa3cfbe77c6e6ad65b3fe7b7c799d41ab988179c6"
+  end
+
+  resource "pyvmomi" do
+    url "https://files.pythonhosted.org/packages/b2/0c/6d6772be8df97d0965a1531612035f883a16dae5a892c835687507f683ac/pyvmomi-6.7.0.2018.9.tar.gz"
+    sha256 "e4d5d3c23b48180f4b48a188653d6ff78e2773e3dbea0da4d5c41cea9b757ab6"
   end
 
   resource "pytz" do
