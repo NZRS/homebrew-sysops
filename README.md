@@ -19,9 +19,11 @@ mktmpenv
 
 # Install the package of interest as well as homebrew-pypi-poet
 ```
+
 pip install pbr==4.1.0
 pip install PyYAML==3.13
 pip install Jinja2
+pip install six==1.11.0
 pip install ansible ara docker-py python-neutronclient \
   shade pywinrm kerberos xmltodict boto pyvmomi \
   botocore apache-libcloud python-keyczar \
