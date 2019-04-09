@@ -14,22 +14,22 @@ source $(brew --prefix)/bin/virtualenvwrapper.sh
 
 # Set up a temporary virtual environment
 ```
-mktmpenv
+mktmpenv -p python3.7
 ```
 
 # Install the package of interest as well as homebrew-pypi-poet
 ```
 
-pip install pbr==4.1.0
+pip install pbr==5.1.1
 pip install PyYAML==3.13
-pip install Jinja2
+pip install Jinja2==2.10
 pip install six==1.11.0
 pip install ansible ara docker-py python-neutronclient \
   shade pywinrm kerberos xmltodict boto pyvmomi \
   botocore apache-libcloud python-keyczar \
   passlib zabbix-api junos-eznc jxmlease dnspython \
   boto3 pysphere python-consul python-vagrant \
-  molecule psycopg2 homebrew-pypi-poet
+  molecule psycopg2-binary homebrew-pypi-poet
 ```
 
 ```
@@ -38,7 +38,7 @@ poet ansible -a ara -a docker-py -a python-neutronclient \
   -a botocore -a apache-libcloud -a python-keyczar \
   -a passlib -a zabbix-api -a junos-eznc -a jxmlease -a dnspython \
   -a pysphere -a python-consul -a python-vagrant \
-  -a molecule -a psycopg2 -a boto3
+  -a molecule -a psycopg2-binary -a boto3
 ```
 
 
