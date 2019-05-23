@@ -24,10 +24,11 @@ pip install pbr==5.1.1
 pip install PyYAML==3.13
 pip install Jinja2==2.10
 pip install six==1.11.0
+pip install junos-eznc==2.2.0
 pip install ansible ara docker-py python-neutronclient \
   shade pywinrm kerberos xmltodict boto pyvmomi \
   botocore apache-libcloud python-keyczar \
-  passlib zabbix-api junos-eznc jxmlease dnspython \
+  passlib zabbix-api jxmlease dnspython \
   boto3 pysphere python-consul python-vagrant \
   molecule psycopg2-binary homebrew-pypi-poet
 ```
