@@ -25,21 +25,24 @@ pip install PyYAML==3.13
 pip install Jinja2==2.10
 pip install six==1.11.0
 pip install junos-eznc==2.2.0
-pip install ansible ara docker-py python-neutronclient \
-  shade pywinrm kerberos xmltodict boto pyvmomi \
+pip install --pre djangorestframework-filters
+pip install ansible ara django docker-py python-neutronclient \
+  dynaconf shade pywinrm kerberos xmltodict boto pyvmomi \
   botocore apache-libcloud python-keyczar \
   passlib zabbix-api jxmlease dnspython \
   boto3 pysphere python-consul python-vagrant \
-  molecule psycopg2-binary homebrew-pypi-poet
+  django_filters djangorestframework whitenoise \
+  molecule psycopg2 django-cors-headers homebrew-pypi-poet
 ```
 
 ```
-poet ansible -a ara -a docker-py -a python-neutronclient \
-  -a shade -a pywinrm -a kerberos -a xmltodict -a boto -a pyvmomi \
-  -a botocore -a apache-libcloud -a python-keyczar \
+poet ansible -a ara -a django -a docker-py -a python-neutronclient \
+  -a dynaconf -a shade -a pywinrm -a kerberos -a xmltodict -a boto -a pyvmomi \
+  -a django-cors-headers -a botocore -a apache-libcloud -a python-keyczar \
   -a passlib -a zabbix-api -a junos-eznc -a jxmlease -a dnspython \
-  -a pysphere -a python-consul -a python-vagrant \
-  -a molecule -a psycopg2-binary -a boto3
+  -a pysphere -a python-consul -a python-vagrant -a whitenoise \
+  -a django_filters -a djangorestframework -a djangorestframework-filters \
+  -a molecule -a psycopg2 -a boto3
 ```
 
 
