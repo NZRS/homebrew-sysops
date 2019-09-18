@@ -2,6 +2,7 @@ Requirements to build (installed via homebrew):
 
 postgresql
 python
+openssl@1.1
 
 
 Checkout the homebrew tap somewhere;
@@ -20,9 +21,10 @@ mktmpenv -p python3.7
 # Install the package of interest as well as homebrew-pypi-poet
 ```
 
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
 pip install pbr==5.1.1
-pip install PyYAML==3.13
-pip install Jinja2==2.10
 pip install six==1.11.0
 pip install junos-eznc==2.2.0
 pip install --pre djangorestframework-filters
