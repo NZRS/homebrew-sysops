@@ -21,8 +21,8 @@ mktmpenv -p python3.7
 # Install the package of interest as well as homebrew-pypi-poet
 ```
 
-export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/gmp/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include -I/usr/local/Cellar/gmp/6.1.2_2/include"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
 pip install pbr==5.1.1
 pip install six==1.11.0
