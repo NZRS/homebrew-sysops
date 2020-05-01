@@ -57,7 +57,7 @@ poet ansible -a ara -a django -a docker-py -a python-neutronclient \
 deactivate
 ```
 
-# Create a new branch in nzrs/homebrew-sysops on github and switch to it locally
+# Create a new branch in nzrs/homebrew-sysops on github and check it out
 
 ```
 cd /usr/local/Homebrew/Library/Taps/nzrs/homebrew-sysops
@@ -65,10 +65,10 @@ git pull
 git checkout name-of-my-branch
 ```
 
-# Update the anisbleINZ formula with the output from poet above
+# Edit the anisbleINZ formula with the output from poet above
 
-You will need to remove the ansible resource block from the ouput and update the
-sha256 checksum at the top.
+You will need to remove the ansible `resource` block from the ouput and update
+the `sha256` digest at the top.
 
 ```
 brew edit ansibleINZ
@@ -81,7 +81,17 @@ brew install --build-bottle ansibleINZ
 brew bottle ansibleINZ
 ```
 
-Rename tarball to change the two dashes in the filename into a single.
+Calculate digest for new ansibleINZ bottle, re-edit the formula and put the
+new digest in the `bottle` block near the top.
+
+```
+shasum -a 256 anisbleINZ--X.Y.Z_V.R.bottle.tar.gz
+brew edit ansibleINZ
+```
+
+# Make your changes public
+
+Rename tarball to change the two dashes in the filename into a single one.
 
 ```
 mv anisbleINZ--X.Y.Z_V.R.bottle.tar.gz anisbleINZ-X.Y.Z_V.R.bottle.tar.gz
