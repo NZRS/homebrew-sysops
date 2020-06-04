@@ -48,7 +48,7 @@ poet ansible -a ara -a django -a docker-py -a python-neutronclient \
   -a passlib -a zabbix-api -a junos-eznc -a jxmlease -a dnspython \
   -a pysphere -a python-consul -a python-vagrant -a whitenoise \
   -a django_filters -a djangorestframework -a djangorestframework-filters \
-  -a molecule -a psycopg2 -a boto3 > /tmp/poet.output
+  -a molecule -a psycopg2 -a boto3 > /tmp/poet.out
 ```
 
 # Destroy the temporary virtual environment you just created
@@ -57,45 +57,55 @@ poet ansible -a ara -a django -a docker-py -a python-neutronclient \
 deactivate
 ```
 
-# Create a new branch in nzrs/homebrew-sysops on github and check it out
-
-```
-cd /usr/local/Homebrew/Library/Taps/nzrs/homebrew-sysops
-git pull
-git checkout name-of-my-branch
-```
-
 # Edit the anisbleINZ formula with the output from poet above
 
-You will need to remove the ansible `resource` block from the ouput and update
-the `sha256` digest at the top.
+You will need to remove the ansible `resource` block from the ouput and
+update the `sha256` digest at the top.
 
 ```
 brew edit ansibleINZ
+```
+
+# Uninstall anisbleINZ if it is already installed
+
+```
+brew uninstall ansibleINZ
 ```
 
 # Build and install the new anisbleINZ bottle
 
 ```
 brew install --build-bottle ansibleINZ
-brew bottle ansibleINZ
+brew bottle ansibleINZ > /tmp/bottle.out
 ```
 
-Calculate digest for new ansibleINZ bottle, re-edit the formula and put the
-new digest in the `bottle` block near the top.
+# Copy the new sha256 digest from the output of brew bottle above
+
+Re-edit the formula again and update the `sha256` digest in the `bottle`
+block near the top.
 
 ```
-shasum -a 256 anisbleINZ--X.Y.Z_V.R.bottle.tar.gz
 brew edit ansibleINZ
 ```
 
-# Make your changes public
+# Upload the new ansibleINZ bottle
 
 Rename tarball to change the two dashes in the filename into a single one.
 
 ```
-mv anisbleINZ--X.Y.Z_V.R.bottle.tar.gz anisbleINZ-X.Y.Z_V.R.bottle.tar.gz
+mv anisbleINZ--X.Y.Z.R.bottle.tar.gz anisbleINZ-X.Y.Z.R.bottle.tar.gz
 ```
 
-Copy the tarball to `vagrant.nzrs.net.nz:/var/vagrant` and then create a
-pull-request to merge your changes into the `master` branch.
+Copy the new bottle to `vagrant.nzrs.net.nz:/var/vagrant`
+
+# Update the formula in nzrs/homebrew-sysops on github
+
+Create a new branch from `master` and clone it. Checkout that branch and
+then copy the updated formula from the local homebrew tap into the new
+branch.
+
+```
+cp /usr/local/Homebrew/Library/Taps/nzrs/homebrew-sysops/ansibleINZ.rb .
+```
+
+Commit and push your changes and then create a pull-request.
