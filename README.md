@@ -2,7 +2,7 @@
 
 ```
 brew install postgresql
-brew install python
+brew install python@3
 brew install openssl@1.1
 ```
 
@@ -16,7 +16,7 @@ source $(brew --prefix)/bin/virtualenvwrapper.sh
 # Set up a temporary virtual environment
 
 ```
-mktmpenv -p python3.7
+mktmpenv -p python3
 ```
 
 # Install packages of interest as well as homebrew-pypi-poet
@@ -93,7 +93,7 @@ brew edit ansibleINZ
 Rename tarball to change the two dashes in the filename into a single one.
 
 ```
-mv anisbleINZ--X.Y.Z.R.bottle.tar.gz anisbleINZ-X.Y.Z.R.bottle.tar.gz
+mv anisbleINZ--X.Y.Z.bottle.tar.gz anisbleINZ-X.Y.Z.bottle.tar.gz
 ```
 
 Copy the new bottle to `vagrant.nzrs.net.nz:/var/vagrant`

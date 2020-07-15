@@ -3,8 +3,8 @@ class Ansibleinz < Formula
 
   desc "Automate deployment, configuration, and upgrading"
   homepage "https://www.ansible.com/"
-  url "https://releases.ansible.com/ansible/ansible-2.9.9.tar.gz"
-  sha256 "e83d84ae8bf131c0499d8a4c0e1144bf969454c43086e61cca3c224227df29d1"
+  url "https://files.pythonhosted.org/packages/03/4f/cccab1ec2e0ecb05120184088e00404b38854809cf35aa76889406fbcbad/ansible-2.9.10.tar.gz"
+  sha256 "0866f1432db1698758ca5753f2c1c2a8048823cc6f9ab4b7d03162c44febcacd"
   head "https://github.com/ansible/ansible.git", :branch => "devel"
 
   depends_on "pkg-config" => :build
@@ -33,8 +33,8 @@ class Ansibleinz < Formula
   end
 
   resource "apache-libcloud" do
-    url "https://files.pythonhosted.org/packages/15/f0/dcb99cba726642d38884973efdfe7071ccc06919fac034a8925bb4e0c16f/apache-libcloud-3.0.0.tar.gz"
-    sha256 "b9eef1a61383fd401a537cf0796a1067a265288b7ab89be93f5571961a8a2902"
+    url "https://files.pythonhosted.org/packages/ae/dd/a505a95ef51f097125cbd277280601e92c26a9ad18986b2846d306f73aca/apache-libcloud-3.1.0.tar.gz"
+    sha256 "bbb858e045ba5e06d61632c08b9828625766aae30ff4fe727f2bee598c9048ac"
   end
 
   resource "appdirs" do
@@ -43,28 +43,23 @@ class Ansibleinz < Formula
   end
 
   resource "ara" do
-    url "https://files.pythonhosted.org/packages/2d/d4/1467c87d2d89781437d51200c4f4e7339581a90f7e37d6d243cd424af438/ara-1.4.1.tar.gz"
-    sha256 "d19509e3b37f11d49b48e6ed69372dd05db4a9767f9bf2cec40dc3a6c97629a6"
+    url "https://files.pythonhosted.org/packages/46/4f/0d88fcd453bc65de4f654e59a1021dc09148a9848f4791785f716d663a42/ara-1.4.2.tar.gz"
+    sha256 "9ad6e67af83a412182099957a8e0abb9bcf72945657d4ab41ac36f163809ebbb"
   end
 
   resource "arrow" do
-    url "https://files.pythonhosted.org/packages/0d/e1/bad2eff749887d400c9fb9041846517c1cc7b66951052a7751316940c3a1/arrow-0.15.6.tar.gz"
-    sha256 "eb5d339f00072cc297d7de252a2e75f272085d1231a3723f1026d1fa91367118"
+    url "https://files.pythonhosted.org/packages/3f/e5/ddd9d095abbd249c2a610e6676c806a5f156c943677b30c2904f4c18f1b9/arrow-0.15.7.tar.gz"
+    sha256 "3f1a92b25bbee5f80cc8f6bdecfeade9028219229137c559c37335b4f574a292"
   end
 
   resource "asgiref" do
-    url "https://files.pythonhosted.org/packages/30/c1/bbde4e26250ca00c9aae5c7bd73ee1785d1a0665b1ae18481127bb0c00d0/asgiref-3.2.7.tar.gz"
-    sha256 "8036f90603c54e93521e5777b2b9a39ba1bad05773fcf2d208f0299d1df58ce5"
+    url "https://files.pythonhosted.org/packages/6d/6e/6e0ff19e7054491be7390fec2b711f838b31282fd3afe28057314d72f11b/asgiref-3.2.10.tar.gz"
+    sha256 "7e51911ee147dd685c3c8b805c0ad0cb58d360987b56953878f8c06d2d1c6f1a"
   end
 
   resource "attrs" do
     url "https://files.pythonhosted.org/packages/98/c3/2c227e66b5e896e15ccdae2e00bbc69aa46e9a8ce8869cc5fa96310bf612/attrs-19.3.0.tar.gz"
     sha256 "f7b7ce16570fe9965acd6d30101a28f62fb4a7f9e926b3bbc9b61f8b04247e72"
-  end
-
-  resource "Babel" do
-    url "https://files.pythonhosted.org/packages/34/18/8706cfa5b2c73f5a549fdc0ef2e24db71812a2685959cff31cbdfc010136/Babel-2.8.0.tar.gz"
-    sha256 "1aac2ae2d0d8ea368fa90906567f5c08463d98ade155c0c4bfedd6a0f7160e38"
   end
 
   resource "bcrypt" do
@@ -83,13 +78,13 @@ class Ansibleinz < Formula
   end
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/5a/06/2fc2f8b022236d8c6bc310112293d21c7de5947aa3e279e3b4762124b6f1/boto3-1.13.21.tar.gz"
-    sha256 "86de0882ba324ba4ced362b5c94491b8d126d378f2ee24d32486cb64b160a89f"
+    url "https://files.pythonhosted.org/packages/bc/9c/960e500e3108dc43966cbf56861575786d068089c17c581f6efbfa228aab/boto3-1.14.20.tar.gz"
+    sha256 "e6ab26155b2f83798218106580ab2b3cd47691e25aba912e0351502eda8d86e0"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/ff/6b/1d6afcfe57bffd1fe874bd623efa52994f57cbaaebd971bde8f44cc126f7/botocore-1.16.21.tar.gz"
-    sha256 "7bd43e2fdf579875e3d3073e25699f5e524cc36a1748c4aee7c9c626e3760b2b"
+    url "https://files.pythonhosted.org/packages/98/89/388651fcd98d8b9be63c44e356e28c24f742259cea507c13f501e623a4fc/botocore-1.17.20.tar.gz"
+    sha256 "d1bf8c2085719221683edf54913c6155c68705f26ab4a72c45e4de5176a8cf7b"
   end
 
   resource "Cerberus" do
@@ -98,8 +93,8 @@ class Ansibleinz < Formula
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/b8/e2/a3a86a67c3fc8249ed305fc7b7d290ebe5e4d46ad45573884761ef4dea7b/certifi-2020.4.5.1.tar.gz"
-    sha256 "51fcb31174be6e6664c5f69e3e1691a2d72a1a12e90f872cbdb1567eb47b6519"
+    url "https://files.pythonhosted.org/packages/40/a7/ded59fa294b85ca206082306bba75469a38ea1c7d44ea7e1d64f5443d67a/certifi-2020.6.20.tar.gz"
+    sha256 "5930595817496dd21bb8dc35dad090f1c2cd0adfaf21204bf6732ca5d8ee34d3"
   end
 
   resource "cffi" do
@@ -123,13 +118,13 @@ class Ansibleinz < Formula
   end
 
   resource "cliff" do
-    url "https://files.pythonhosted.org/packages/21/4e/0edfaf74a40cffe66de8ae8b9704420696ed37238dd57ce0935c9a341077/cliff-3.1.0.tar.gz"
-    sha256 "529b0ee0d2d38c7cbbababbbe3472b43b667a5c36025ef1b6cd00851c4313849"
+    url "https://files.pythonhosted.org/packages/c7/c4/38ea8a52809dd2fd7b6282d21bb17a5f3d13d79df57b53b96dddb41dc2b6/cliff-3.3.0.tar.gz"
+    sha256 "611595ad7b4bdf57aa252027796dac3273ab0f4bc1511e839cce230a351cb710"
   end
 
   resource "cmd2" do
-    url "https://files.pythonhosted.org/packages/21/48/d48fe56f794e9a3feef440e4fb5c80dd4309575e13e132265fc160e82033/cmd2-0.8.9.tar.gz"
-    sha256 "145cb677ebd0e3cae546ab81c30f6c25e0b08ba0f1071df854d53707ea792633"
+    url "https://files.pythonhosted.org/packages/f9/de/4cade6ec258f525cb419f31bea4c805a00d386386ed9d766c61d79583791/cmd2-1.2.0.tar.gz"
+    sha256 "5fa7bd03e60a4911916143d89c23ca14ac7c157d3f72eb49ad6306d0a3fbf0f0"
   end
 
   resource "colorama" do
@@ -148,8 +143,8 @@ class Ansibleinz < Formula
   end
 
   resource "debtcollector" do
-    url "https://files.pythonhosted.org/packages/19/65/837ebcd2a157c62b0708cfcbebbfbf1018fa477f8013d1b0055ff609f403/debtcollector-2.0.1.tar.gz"
-    sha256 "36dfe3e691e7e66f650273ae3bd1670b4c1668a10b16e118b2e6ec9ad3a74309"
+    url "https://files.pythonhosted.org/packages/a1/09/d463e1514308f0c04a46cdcc2502fb2d652f6b19659a403d0592ae6e6f6f/debtcollector-2.1.0.tar.gz"
+    sha256 "a25fc6215560d81cb9f2a0b58d6c834f2a24010987027bde169599e138a205af"
   end
 
   resource "decorator" do
@@ -158,18 +153,18 @@ class Ansibleinz < Formula
   end
 
   resource "Django" do
-    url "https://files.pythonhosted.org/packages/05/f5/ccf81420fe3b3231a61c2fae1ab905bf2e66ba3cab9e4f5d982906bcf709/Django-3.1a1.tar.gz"
-    sha256 "dd96f98ec1c3e60877d45cea7350215f16de409848d23cced8443db1b188bd9b"
+    url "https://files.pythonhosted.org/packages/ac/92/261266a01e8ff03c71973a3c8ab1604dc3147b8ef35363697cbbe5c2563a/Django-3.1b1.tar.gz"
+    sha256 "045be31d68dfed684831e39ab1d9e77a595f1a393935cb43b6c5451d2e78c8a4"
   end
 
   resource "django-cors-headers" do
-    url "https://files.pythonhosted.org/packages/5d/db/e2bb7b97312fe228655815954b6b3deb41b92bedc307f474dadf3f748751/django-cors-headers-3.3.0.tar.gz"
-    sha256 "73d654950b5f5e7e4f67c05183d2169d4f7518ceb87734eb0d68f9e43be59f1c"
+    url "https://files.pythonhosted.org/packages/76/94/8617f375b700c59e084197405ce0675b51f4cea342927ae777355e6eb8e7/django-cors-headers-3.4.0.tar.gz"
+    sha256 "f5218f2f0bb1210563ff87687afbf10786e080d8494a248e705507ebd92d7153"
   end
 
   resource "django-filter" do
-    url "https://files.pythonhosted.org/packages/dc/75/af3f0c2682d2603617ee3061b36395a64fb9d70c327bb759de43e643e5b3/django-filter-2.2.0.tar.gz"
-    sha256 "c3deb57f0dd7ff94d7dce52a047516822013e2b441bed472b722a317658cfd14"
+    url "https://files.pythonhosted.org/packages/13/b9/ab3342362cf7663ba50a53a5e6cb49047a5e9845af05f8a2c4bfa5a41a85/django-filter-2.3.0.tar.gz"
+    sha256 "11e63dd759835d9ba7a763926ffb2662cf8a6dcb4c7971a95064de34dbc7e5af"
   end
 
   resource "django-filters" do
@@ -213,8 +208,8 @@ class Ansibleinz < Formula
   end
 
   resource "dynaconf" do
-    url "https://files.pythonhosted.org/packages/b4/4b/7ffd3a7ec64009ebad40af795d37bd4cfd7820b6fe1c9cf2c2cfff669bfd/dynaconf-2.2.3.tar.gz"
-    sha256 "26b84f2b234a203f6005463d954c9f007181c09345eaaab3fc38503acbdadc7d"
+    url "https://files.pythonhosted.org/packages/b6/02/339a6c2ae2b2afe8d525b0edf6f34899c8f9ceab7c8ccb325dfb66e11f86/dynaconf-3.0.0.tar.gz"
+    sha256 "b5fb3d1b07a78e6166228bb07b4dea2d101de55e1679d119403a2593e337e273"
   end
 
   resource "fasteners" do
@@ -223,8 +218,8 @@ class Ansibleinz < Formula
   end
 
   resource "flake8" do
-    url "https://files.pythonhosted.org/packages/10/b1/ef9620afac4a8794e631e54bbcd2f70257dee04693ea8fd959d57b89714e/flake8-3.8.2.tar.gz"
-    sha256 "c69ac1668e434d37a2d2880b3ca9aafd54b3a10a3ac1ab101d22f29e29cf8634"
+    url "https://files.pythonhosted.org/packages/99/eb/cc2bbe9b242a79d2c5820911f21875a138aafa3dc2c3b9b34ba714f9fef9/flake8-3.8.3.tar.gz"
+    sha256 "f04b9fcbac03b0a3e58c0ab3a0ecc462e023a9faf046d57794184028123aa208"
   end
 
   resource "future" do
@@ -240,11 +235,6 @@ class Ansibleinz < Formula
   resource "idna" do
     url "https://files.pythonhosted.org/packages/65/c4/80f97e9c9628f3cac9b98bfca0402ede54e0563b56482e3e6e45c43c4935/idna-2.7.tar.gz"
     sha256 "684a38a6f903c1d71d6d5fac066b58d7768af4de2b832e426ec79c30daa94a16"
-  end
-
-  resource "importlib-metadata" do
-    url "https://files.pythonhosted.org/packages/b4/1b/baab42e3cd64c9d5caac25a9d6c054f8324cdc38975a44d600569f1f7158/importlib_metadata-1.6.0.tar.gz"
-    sha256 "34513a8a0c4962bc66d35b359558fd8a5e10cd472d37aec5f66858addef32c1e"
   end
 
   resource "iso8601" do
@@ -268,8 +258,8 @@ class Ansibleinz < Formula
   end
 
   resource "jsonpatch" do
-    url "https://files.pythonhosted.org/packages/70/9f/6f0bfbb4cc1401ce994d336bcb4ed2aa924f395e7fd1926511c04a52eee1/jsonpatch-1.25.tar.gz"
-    sha256 "ddc0f7628b8bfdd62e3cbfbc24ca6671b0b6265b50d186c2cf3659dc0f78fd6a"
+    url "https://files.pythonhosted.org/packages/69/72/24826f61fe4ba535207ed8efe17c82a5e9f9fdf2247054ae829b5c134b71/jsonpatch-1.26.tar.gz"
+    sha256 "e45df18b0ab7df1925f20671bbc3f6bd0b4b556fb4b9c5d97684b0a7eac01744"
   end
 
   resource "jsonpointer" do
@@ -293,13 +283,13 @@ class Ansibleinz < Formula
   end
 
   resource "keystoneauth1" do
-    url "https://files.pythonhosted.org/packages/ba/b4/f9d85343fb7b268048bba893c20b9eaddcfe57b230a8169505cbe48107e9/keystoneauth1-4.0.0.tar.gz"
-    sha256 "02b283a662552cba65c1e6b5e89c06acfa242ff96355f59ab7def861e765a695"
+    url "https://files.pythonhosted.org/packages/60/0c/0d8ed208821c40a4c55c1d206658c4c7cd69d3d041a3202feef5c0eca902/keystoneauth1-4.2.0.tar.gz"
+    sha256 "000ffd0d752f13eb235dae06f5f5dea16a2ca1f737fe3339632bd696b12489f7"
   end
 
   resource "lxml" do
-    url "https://files.pythonhosted.org/packages/03/a8/73d795778143be51d8b86750b371b3efcd7139987f71618ad9f4b8b65543/lxml-4.5.1.tar.gz"
-    sha256 "27ee0faf8077c7c1a589573b1450743011117f1aa1a91d5ae776bbc5ca6070f2"
+    url "https://files.pythonhosted.org/packages/2c/4d/3ec1ea8512a7fbf57f02dee3035e2cce2d63d0e9c0ab8e4e376e01452597/lxml-4.5.2.tar.gz"
+    sha256 "cdc13a1682b2a6241080745b1953719e7fe0850b40a5c71ca574f090a1391df6"
   end
 
   resource "MarkupSafe" do
@@ -323,8 +313,8 @@ class Ansibleinz < Formula
   end
 
   resource "more-itertools" do
-    url "https://files.pythonhosted.org/packages/16/e8/b371710ad458e56b6c74b82352fdf1625e75c03511c66a75314f1084f057/more-itertools-8.3.0.tar.gz"
-    sha256 "558bb897a2232f5e4f8e2399089e35aecb746e1f9191b6584a151647e89267be"
+    url "https://files.pythonhosted.org/packages/67/4a/16cb3acf64709eb0164e49ba463a42dc45366995848c4f0cf770f57b8120/more-itertools-8.4.0.tar.gz"
+    sha256 "68c70cc7167bdf5c7c9d8f6954a7837089c6a36bf565383919bb595efb8a17e5"
   end
 
   resource "msgpack" do
@@ -343,8 +333,8 @@ class Ansibleinz < Formula
   end
 
   resource "netaddr" do
-    url "https://files.pythonhosted.org/packages/0c/13/7cbb180b52201c07c796243eeff4c256b053656da5cfe3916c3f5b57b3a0/netaddr-0.7.19.tar.gz"
-    sha256 "38aeec7cdd035081d3a4c306394b19d677623bf76fa0913f6695127c7753aefd"
+    url "https://files.pythonhosted.org/packages/c3/3b/fe5bda7a3e927d9008c897cf1a0858a9ba9924a6b4750ec1824c9e617587/netaddr-0.8.0.tar.gz"
+    sha256 "d6cc57c7a07b1d9d2e917aa8b36ae8ce61c35ba3fcd1b83ca31c5a0ee2b5a243"
   end
 
   resource "netifaces" do
@@ -353,13 +343,13 @@ class Ansibleinz < Formula
   end
 
   resource "ntlm-auth" do
-    url "https://files.pythonhosted.org/packages/12/8c/b7b286360a0876c1a4d0a1651eb3c57f471661e126f5c5f097fbad735f40/ntlm-auth-1.4.0.tar.gz"
-    sha256 "350f2389c8ee5517f47db55a36ac2f8efc9742a60a678d6e2caa92385bdcaa9a"
+    url "https://files.pythonhosted.org/packages/44/a5/ab45529cc1860a1cb05129b438b189af971928d9c9c9d1990b549a6707f9/ntlm-auth-1.5.0.tar.gz"
+    sha256 "c9667d361dc09f6b3750283d503c689070ff7d89f2f6ff0d38088d5436ff8543"
   end
 
   resource "openstacksdk" do
-    url "https://files.pythonhosted.org/packages/90/99/3f72e506b12ae63e3a6e12eb320247783c95a93d0ab4751b42c160fadf1a/openstacksdk-0.46.0.tar.gz"
-    sha256 "a1617f00810a0ec1353e66e7da9fe9b4f926a830bb14b48643b6461b8808ef29"
+    url "https://files.pythonhosted.org/packages/66/3e/f108d20a306763a4826630f0b79c1037b8c46a65eb5b789f9220dea1b1be/openstacksdk-0.48.0.tar.gz"
+    sha256 "8652664a30041325a980d03a37c92ca546ed923d26c246a2bb3c92fc5f24243c"
   end
 
   resource "os-client-config" do
@@ -373,38 +363,38 @@ class Ansibleinz < Formula
   end
 
   resource "osc-lib" do
-    url "https://files.pythonhosted.org/packages/20/c9/0ed347fc7635b54cc3e43afff6225be6c4d0a8ff040b578ea686908e8019/osc-lib-2.1.0.tar.gz"
-    sha256 "697d08204a59933035ac246fbc8c8e5453b846b4a8875ed7a9e9caba769b1b57"
+    url "https://files.pythonhosted.org/packages/ad/71/ee714a1bc985f6153cf91941c1de9c7664d8d9527706344051e9f416f1e9/osc-lib-2.2.0.tar.gz"
+    sha256 "fcfce4d63a633c3161e2a6666764446e3f32668e814a94ab98da12e3908ee1d6"
   end
 
   resource "oslo.config" do
-    url "https://files.pythonhosted.org/packages/32/3d/432fc5163054ebefa2c8bdc0dfa53d9aaf0d088421f50518fbb162ff3a29/oslo.config-8.1.0.tar.gz"
-    sha256 "f4c4068d547ea53289fa5526680901380bb2cc6de5b8b7862ef5fd6b7e3ad7d9"
+    url "https://files.pythonhosted.org/packages/2b/16/182a40587eaf4081e5ec6c9fd9b3d1fe4372b14f98ad462e4974654df6dc/oslo.config-8.2.0.tar.gz"
+    sha256 "116ff3a7b98b0309b083af7906d99f8c6bea67df5ee03a85e2ac02700dd75d30"
   end
 
   resource "oslo.context" do
-    url "https://files.pythonhosted.org/packages/61/4b/601417c286d0a93c509035772025b20e226a3c7a857b98fed141233d5920/oslo.context-3.0.2.tar.gz"
-    sha256 "ee05a37829ec797e371a4a25cfebbce42c2ec1bb63ed40028761ff7b83958627"
+    url "https://files.pythonhosted.org/packages/10/bd/63ec243afb7724dc48425c11295d061062738591acaf35eaa987b0f4a773/oslo.context-3.1.0.tar.gz"
+    sha256 "2546ccef19ad7b62b0d3a57ab7cce714b1dfb0b39c4563f9b655c4f9fe128e54"
   end
 
   resource "oslo.i18n" do
-    url "https://files.pythonhosted.org/packages/45/03/1414ca24321408483b6bb2cbd916e08fac2bda2edc28b56b80e133e76f9c/oslo.i18n-4.0.1.tar.gz"
-    sha256 "d0f1116399079e8f20e5017e6ea911881f78b12ef858abe65f2b5974b5a7f1ac"
+    url "https://files.pythonhosted.org/packages/fe/40/8cbad079b6930ce7958af9187c208789bb77b90815eea6b01af169ea8f86/oslo.i18n-5.0.0.tar.gz"
+    sha256 "2e71ae3ec73a74ac71f8f407e6653243dc267eed404624255a296c34f1fc6887"
   end
 
   resource "oslo.log" do
-    url "https://files.pythonhosted.org/packages/b2/f1/2dd0fc53a2995c421c8a43765793de066427b6ad3aabde375e9c4473d48e/oslo.log-4.2.0.tar.gz"
-    sha256 "309a856284a6b66d47f46d41ac42f8c422f09b9b0735da02749aab9f4dad39ee"
+    url "https://files.pythonhosted.org/packages/a5/4f/53aabb1f8e3782bceb8f7e78d184706c2ac08051d90966e768f11c0f79c1/oslo.log-4.3.0.tar.gz"
+    sha256 "a1b21317bf01e894c80836c01bea526d58138ad97b70f304df3d360c76a87bbb"
   end
 
   resource "oslo.serialization" do
-    url "https://files.pythonhosted.org/packages/76/f5/972f45dc3365a98b5d9d1e1982e82e8eb8305d5fbd02f5217d5e1d97aafc/oslo.serialization-3.1.1.tar.gz"
-    sha256 "146470f7b079930d7a15ac47463c12cee61a03a77050ed46b3ffc142753ecca1"
+    url "https://files.pythonhosted.org/packages/0f/42/3625893aee1450957caf49514810e13514c1b00b0cfbe2a08194bf392aa5/oslo.serialization-4.0.0.tar.gz"
+    sha256 "f465df171be564282cb3e86ec895f5b6ae5e5b0760e9af2be96a942a5255a860"
   end
 
   resource "oslo.utils" do
-    url "https://files.pythonhosted.org/packages/b1/1a/bd6f4abec402bd5d77899bd0f19a36a977c56c1b8a1a5b64f7d85c430a1a/oslo.utils-4.1.1.tar.gz"
-    sha256 "a272f4a665dac902a3f6ca8b2962302648a4e0e2193b47a57a22416b906d3c0b"
+    url "https://files.pythonhosted.org/packages/df/0a/fde0f0740c9c91d4dd93338cfa7a158fed8f0434ddb451a661e8d4cbeabe/oslo.utils-4.2.2.tar.gz"
+    sha256 "54f84102bf202846f15ad16f3093d7d5c95f056a440d24e961798ed99e66a3b3"
   end
 
   resource "packaging" do
@@ -468,8 +458,8 @@ class Ansibleinz < Formula
   end
 
   resource "py" do
-    url "https://files.pythonhosted.org/packages/bd/8f/169d08dcac7d6e311333c96b63cbe92e7947778475e1a619b674989ba1ed/py-1.8.1.tar.gz"
-    sha256 "5e27081401262157467ad6e7f851b7aa402c5852dbcb3dae06768434de5752aa"
+    url "https://files.pythonhosted.org/packages/97/a6/ab9183fe08f69a53d06ac0ee8432bc0ffbb3989c575cc69b73a0229a9a99/py-1.9.0.tar.gz"
+    sha256 "9ca6883ce56b4e8da7e79ac18787889fa5206c79dcc67fb065376cd2fe03f342"
   end
 
   resource "pyasn1" do
@@ -527,11 +517,6 @@ class Ansibleinz < Formula
     sha256 "7979331bfcba207414f5e1263b5a0f8f521d0f457318836a7355531ed1a4c7d8"
   end
 
-  resource "python-box" do
-    url "https://files.pythonhosted.org/packages/2e/3b/dc8066015af4dfc2aeae6666d3a0764b31548dee67fc7ef6803341fc8d9a/python-box-3.4.6.tar.gz"
-    sha256 "694a7555e3ff9fbbce734bbaef3aad92b8e4ed0659d3ed04d56b6a0a0eff26a9"
-  end
-
   resource "python-consul" do
     url "https://files.pythonhosted.org/packages/7f/06/c12ff73cb1059c453603ba5378521e079c3f0ab0f0660c410627daca64b7/python-consul-1.1.0.tar.gz"
     sha256 "168f1fa53948047effe4f14d53fc1dab50192e2a2cf7855703f126f469ea11f4"
@@ -540,11 +525,6 @@ class Ansibleinz < Formula
   resource "python-dateutil" do
     url "https://files.pythonhosted.org/packages/be/ed/5bbc91f03fa4c839c4c7360375da77f9659af5f7086b7a7bdda65771c8e0/python-dateutil-2.8.1.tar.gz"
     sha256 "73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c"
-  end
-
-  resource "python-dotenv" do
-    url "https://files.pythonhosted.org/packages/4c/9e/95b06d832d8e5bbc60bed4a6d88463e5bbce82c383af6917eb17a3d8a60a/python-dotenv-0.13.0.tar.gz"
-    sha256 "3b9909bc96b0edc6b01586e1eed05e71174ef4e04c71da5786370cebea53ad74"
   end
 
   resource "python-gilt" do
@@ -558,13 +538,13 @@ class Ansibleinz < Formula
   end
 
   resource "python-keystoneclient" do
-    url "https://files.pythonhosted.org/packages/c9/ec/5cce3af48ac2bd891e1ff7dcaffa2d7322b4438f2324fc3c1d0125c6cd10/python-keystoneclient-4.0.0.tar.gz"
-    sha256 "6d93efd494b43d8b4cd8a62281c82d3f02aa531c5523e6bbe7d696e37bc77ba8"
+    url "https://files.pythonhosted.org/packages/3e/36/425bb8232f7ed1d6fab04d480fbec532eb41963c93839b0f9deeaf20ab7d/python-keystoneclient-4.1.0.tar.gz"
+    sha256 "7b9b99021358a4db20673d338ba42bc2bd8e7e969cfd777f68c600ae6a39cb1b"
   end
 
   resource "python-neutronclient" do
-    url "https://files.pythonhosted.org/packages/c8/cb/5ac3d57e9f482dd7372c1126f973344854a7295b52ecc40c2363fdc4e7ca/python-neutronclient-7.1.1.tar.gz"
-    sha256 "48c14576c907e7aca111e3354798ed1a169016fddfdbab9e68243fb75a04b22c"
+    url "https://files.pythonhosted.org/packages/9c/f0/2b9b1642dad5f175eabbd8bf1681aa250dc795bd3f34d363a6f71f8e9ac3/python-neutronclient-7.2.0.tar.gz"
+    sha256 "8beb4a60a0db6e9f3806659091b1e228287bbf3904b7dfce038d1c1b63f91a85"
   end
 
   resource "python-vagrant" do
@@ -593,8 +573,8 @@ class Ansibleinz < Formula
   end
 
   resource "requests" do
-    url "https://files.pythonhosted.org/packages/f5/4f/280162d4bd4d8aad241a21aecff7a6e46891b905a4341e7ab549ebaf7915/requests-2.23.0.tar.gz"
-    sha256 "b3f43d496c6daba4493e7c431722aeb7dbc6288f52a6e04e7b6023b0247817e6"
+    url "https://files.pythonhosted.org/packages/da/67/672b422d9daf07365259958912ba533a0ecab839d4084c487a5fe9a5405f/requests-2.24.0.tar.gz"
+    sha256 "b3559a131db72c33ee969480840fff4bb6dd111de7dd27c8ee1f820f4f00231b"
   end
 
   resource "requests_ntlm" do
@@ -658,8 +638,8 @@ class Ansibleinz < Formula
   end
 
   resource "stevedore" do
-    url "https://files.pythonhosted.org/packages/be/19/83fd12828f879f53b85fe820925776aecda710944279e47a2dac53444adc/stevedore-1.32.0.tar.gz"
-    sha256 "18afaf1d623af5950cc0f7e75e70f917784c73b652a34a12d90b309451b5500b"
+    url "https://files.pythonhosted.org/packages/f9/70/b40722c96e8d1558e3a38ad49b21c25aad5c44146d933d66b738d00cad62/stevedore-3.1.0.tar.gz"
+    sha256 "79270bd5fb4a052e76932e9fef6e19afa77090c4000f2680eb8c2e887d2e6e36"
   end
 
   resource "tabulate" do
@@ -670,11 +650,6 @@ class Ansibleinz < Formula
   resource "testinfra" do
     url "https://files.pythonhosted.org/packages/26/7c/f28083ce10a9978ae8f10ee6491b8e2d797f27bbe4c4a9072250aa9308cf/testinfra-3.4.0.tar.gz"
     sha256 "ce90c6f06e4a03fcb1af1fa0f028baca74021dbfe5449044767b3788dcec1a46"
-  end
-
-  resource "toml" do
-    url "https://files.pythonhosted.org/packages/da/24/84d5c108e818ca294efe7c1ce237b42118643ce58a14d2462b3b2e3800d5/toml-0.10.1.tar.gz"
-    sha256 "926b612be1e5ce0634a2ca03470f95169cf16f939018233a670519cb4ac58b0f"
   end
 
   resource "tree-format" do
@@ -688,8 +663,8 @@ class Ansibleinz < Formula
   end
 
   resource "wcwidth" do
-    url "https://files.pythonhosted.org/packages/97/23/3c0fde825b1c6a015e7360e105da2bdf3034fe670ede8f03d21194c1b910/wcwidth-0.2.3.tar.gz"
-    sha256 "edbc2b718b4db6cdf393eefe3a420183947d6aa312505ce6754516f458ff8830"
+    url "https://files.pythonhosted.org/packages/89/38/459b727c381504f361832b9e5ace19966de1a235d73cdbdea91c771a1155/wcwidth-0.2.5.tar.gz"
+    sha256 "c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"
   end
 
   resource "websocket_client" do
@@ -727,24 +702,19 @@ class Ansibleinz < Formula
     sha256 "2d6c62001cb79a7de6fe286424967276edaca09d3833b72fb04f7863f29fce4b"
   end
 
-  resource "zipp" do
-    url "https://files.pythonhosted.org/packages/ce/8c/2c5f7dc1b418f659d36c04dec9446612fc7b45c8095cc7369dd772513055/zipp-3.1.0.tar.gz"
-    sha256 "c599e4d75c98f6798c509911d08a22e6c021d074469042177c8c86fb92eefd96"
-  end
-
   def install
-    venv = virtualenv_create(libexec, "python3.7")
+    venv = virtualenv_create(libexec, "python3")
 
     res = resources.map(&:name).to_set - ["ptyprocess", "psycopg2",
                                           "ara", "pytz", "molecule", "yamllint", "pytest", "ansible-lint",
                                           "flake8"]
 
     resource("ptyprocess").stage do
-        system libexec/"bin/pip3.7", "install", "ptyprocess"
+        system libexec/"bin/pip3", "install", "ptyprocess"
     end
 
     resource("psycopg2").stage do
-        system libexec/"bin/python3.7", "setup.py", "build_ext", "--pg-config=/usr/local/opt/postgresql/bin/pg_config", "install"
+        system libexec/"bin/python3", "setup.py", "build_ext", "--pg-config=/usr/local/opt/postgresql/bin/pg_config", "install"
     end
 
     venv.pip_install_and_link resource("ara")
