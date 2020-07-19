@@ -19,7 +19,7 @@ class Ansibleinz < Formula
   bottle do
     root_url "http://vagrant.nzrs.net.nz"
     cellar :any
-    sha256 "64d60b47c36f070bd8807a582aa0b5906e57be967254a9c98b823863960cbdd5" => :catalina
+    sha256 "38b2ca0cea41e11f453a5379d6d3cd63a0d514216064693708cc7e2d956fa60e" => :catalina
   end
 
   resource "ansible-lint" do
