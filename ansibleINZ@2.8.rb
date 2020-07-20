@@ -1,10 +1,10 @@
-class Ansibleinz < Formula
+class AnsibleinzAT28 < Formula
   include Language::Python::Virtualenv
 
   desc "Automate deployment, configuration, and upgrading"
   homepage "https://www.ansible.com/"
-  url "https://files.pythonhosted.org/packages/03/4f/cccab1ec2e0ecb05120184088e00404b38854809cf35aa76889406fbcbad/ansible-2.9.10.tar.gz"
-  sha256 "0866f1432db1698758ca5753f2c1c2a8048823cc6f9ab4b7d03162c44febcacd"
+  url "https://releases.ansible.com/ansible/ansible-2.8.13.tar.gz"
+  sha256 "eb9b415dd81caf692ddbd3e61466aa3da973d88c096f0e8545de6f418be24025"
   head "https://github.com/ansible/ansible.git", :branch => "devel"
 
   depends_on "pkg-config" => :build
@@ -19,7 +19,7 @@ class Ansibleinz < Formula
   bottle do
     root_url "http://vagrant.nzrs.net.nz"
     cellar :any
-    sha256 "38b2ca0cea41e11f453a5379d6d3cd63a0d514216064693708cc7e2d956fa60e" => :catalina
+    sha256 "4fafc6106088a88ea9b488ed594ba90cc156f236b6251a47f9952f9296eadbbb" => :mojave
   end
 
   resource "ansible-lint" do
@@ -78,13 +78,13 @@ class Ansibleinz < Formula
   end
 
   resource "boto3" do
-    url "https://files.pythonhosted.org/packages/85/c6/00e25614edf5ac025684bcc7af4c750187249ea7abbfc19dac05b95e83e8/boto3-1.14.22.tar.gz"
-    sha256 "07bd0872e9178b637baefb82aff8abb76197770c9fc60c4d6575564ba878e3e4"
+    url "https://files.pythonhosted.org/packages/ca/4a/e0eb97a555cd8c6f866854444385dc555768bee224a7fbeb0d0612b723b9/boto3-1.14.23.tar.gz"
+    sha256 "a31d9b2d681a0ce7db8e476879222b27455a1cc49a60e2111e0ddb47c574d127"
   end
 
   resource "botocore" do
-    url "https://files.pythonhosted.org/packages/c0/51/eec13a6ee1fd802bf61070013c7ec354dec262ada8f62eef886ebcc17ba1/botocore-1.17.22.tar.gz"
-    sha256 "4d084dfcfcdf21ac2df17d017607ca53d53ac6c2fa17484cdd87ef78daba06b8"
+    url "https://files.pythonhosted.org/packages/d5/c1/4771aae4d32e2ab496248316816ef72b944cfecc594531baa41d6a513995/botocore-1.17.23.tar.gz"
+    sha256 "6711dac304dacb49981d722ef91bd89bd82b6bc68cf0a0890bc30573dcbb1899"
   end
 
   resource "Cerberus" do
@@ -153,18 +153,13 @@ class Ansibleinz < Formula
   end
 
   resource "Django" do
-    url "https://files.pythonhosted.org/packages/ac/92/261266a01e8ff03c71973a3c8ab1604dc3147b8ef35363697cbbe5c2563a/Django-3.1b1.tar.gz"
-    sha256 "045be31d68dfed684831e39ab1d9e77a595f1a393935cb43b6c5451d2e78c8a4"
+    url "https://files.pythonhosted.org/packages/c6/e0/19b529ca9c55fa0ee095edffa7135a8eff354490159d2d64d006928beb84/Django-3.0.8.tar.gz"
+    sha256 "31a5fbbea5fc71c99e288ec0b2f00302a0a92c44b13ede80b73a6a4d6d205582"
   end
 
   resource "django-cors-headers" do
     url "https://files.pythonhosted.org/packages/76/94/8617f375b700c59e084197405ce0675b51f4cea342927ae777355e6eb8e7/django-cors-headers-3.4.0.tar.gz"
     sha256 "f5218f2f0bb1210563ff87687afbf10786e080d8494a248e705507ebd92d7153"
-  end
-
-  resource "django-filter" do
-    url "https://files.pythonhosted.org/packages/13/b9/ab3342362cf7663ba50a53a5e6cb49047a5e9845af05f8a2c4bfa5a41a85/django-filter-2.3.0.tar.gz"
-    sha256 "11e63dd759835d9ba7a763926ffb2662cf8a6dcb4c7971a95064de34dbc7e5af"
   end
 
   resource "djangorestframework" do
@@ -173,13 +168,13 @@ class Ansibleinz < Formula
   end
 
   resource "djangorestframework-filters" do
-    url "https://files.pythonhosted.org/packages/94/7d/53121d8e10573206f82206e2a7258c99489f89d87bd53691828558fa1c26/djangorestframework-filters-1.0.0.dev0.tar.gz"
-    sha256 "d53692f9f0dfcdc1df4e890787f7212c3602476b85faffdefec02e2bc386c5b6"
+    url "https://files.pythonhosted.org/packages/c5/e7/e94c0834cc345b160d51bc57e6145c4903ce0d08db0cdd3d44fa43cc2059/djangorestframework-filters-0.11.1.tar.gz"
+    sha256 "f9249bd6440574ff8788a8994407bf5974e461fbcf65c0bd4785f9e71836768a"
   end
 
   resource "dnspython" do
-    url "https://files.pythonhosted.org/packages/ec/c5/14bcd63cb6d06092a004793399ec395405edf97c2301dfdc146dfbd5beed/dnspython-1.16.0.zip"
-    sha256 "36c5e8e38d4369a08b6780b7f27d790a292b2b08eea01607865bf0936c558e01"
+    url "https://files.pythonhosted.org/packages/67/d0/639a9b5273103a18c5c68a7a9fc02b01cffa3403e72d553acec444f85d5b/dnspython-2.0.0.zip"
+    sha256 "044af09374469c3a39eeea1a146e8cac27daec951f1f1f157b1962fc7cb9d1b7"
   end
 
   resource "docker-py" do
@@ -198,8 +193,8 @@ class Ansibleinz < Formula
   end
 
   resource "dogpile.cache" do
-    url "https://files.pythonhosted.org/packages/b5/02/9692c82808341747afc87a7c2b701c8eed76c05ec6bc98844c102a537de7/dogpile.cache-0.9.2.tar.gz"
-    sha256 "bc9dde1ffa5de0179efbcdc73773ef0553921130ad01955422f2932be35c059e"
+    url "https://files.pythonhosted.org/packages/ad/a5/3411705a08be9c53bc5400e2a0a35b6a31eb8361556a3b1552899a5d778b/dogpile.cache-1.0.0.tar.gz"
+    sha256 "4efe71f39f7c76ab8bc51e4aade104e6cd198e30eabd648cb0de7b7c832c9732"
   end
 
   resource "dynaconf" do
@@ -633,8 +628,8 @@ class Ansibleinz < Formula
   end
 
   resource "stevedore" do
-    url "https://files.pythonhosted.org/packages/f9/70/b40722c96e8d1558e3a38ad49b21c25aad5c44146d933d66b738d00cad62/stevedore-3.1.0.tar.gz"
-    sha256 "79270bd5fb4a052e76932e9fef6e19afa77090c4000f2680eb8c2e887d2e6e36"
+    url "https://files.pythonhosted.org/packages/bc/3e/0f33515b3b1638e839219f14c09b9b75f86f630c47ad9e79137f73e99a97/stevedore-3.2.0.tar.gz"
+    sha256 "38791aa5bed922b0a844513c5f9ed37774b68edc609e5ab8ab8d8fe0ce4315e5"
   end
 
   resource "tabulate" do
@@ -697,14 +692,12 @@ class Ansibleinz < Formula
     sha256 "2d6c62001cb79a7de6fe286424967276edaca09d3833b72fb04f7863f29fce4b"
   end
 
-
   def install
     venv = virtualenv_create(libexec, "python3.8")
 
-    res = resources.map(&:name).to_set - ["ptyprocess", "psycopg2",
-                                          "ara", "pytz", "molecule", "yamllint", "pytest", "ansible-lint",
-                                          "flake8"]
-
+    res = resources.map(&:name).to_set - ["ara", "molecule", "psycopg2",
+                                          "yamllint", "pytest", "flake8",
+                                          "ansible-lint", "pytz", "ptyprocess"]
     resource("ptyprocess").stage do
         system libexec/"bin/pip3.8", "install", "ptyprocess"
     end
@@ -719,13 +712,12 @@ class Ansibleinz < Formula
     venv.pip_install_and_link resource("yamllint")
     venv.pip_install_and_link resource("pytest")
     venv.pip_install_and_link resource("ansible-lint")
-    venv.pip_install_and_link resource("flake8")
 
     res.each do |r|
       venv.pip_install resource(r)
     end
-
     venv.pip_install_and_link buildpath
+    venv.pip_install_and_link resource("flake8")
   end
 
   test do
