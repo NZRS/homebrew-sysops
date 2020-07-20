@@ -35,7 +35,7 @@ pip install ansible ara django docker-py python-neutronclient \
   botocore apache-libcloud python-keyczar \
   passlib zabbix-api jxmlease dnspython \
   boto3 pysphere python-consul python-vagrant \
-  django_filters djangorestframework whitenoise \
+  djangorestframework whitenoise \
   psycopg2 django-cors-headers homebrew-pypi-poet
 ```
 
@@ -47,7 +47,7 @@ poet ansible -a ara -a django -a docker-py -a python-neutronclient \
   -a django-cors-headers -a botocore -a apache-libcloud -a python-keyczar \
   -a passlib -a zabbix-api -a junos-eznc -a jxmlease -a dnspython \
   -a pysphere -a python-consul -a python-vagrant -a whitenoise \
-  -a django_filters -a djangorestframework -a djangorestframework-filters \
+  -a djangorestframework -a djangorestframework-filters \
   -a molecule -a psycopg2 -a boto3 > /tmp/poet.out
 ```
 
