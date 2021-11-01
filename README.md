@@ -16,39 +16,34 @@ source $(brew --prefix)/bin/virtualenvwrapper.sh
 # Set up a temporary virtual environment
 
 ```
-mktmpenv -p python3.7
+mktmpenv -p python3.8
 ```
 
 # Install packages of interest as well as homebrew-pypi-poet
 
 ```
-export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/gmp/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include -I/usr/local/Cellar/gmp/6.1.2_2/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
-pip install pbr==5.1.1
-pip install six==1.11.0
-pip install junos-eznc==2.2.0
-pip install --pre djangorestframework-filters
+pip install PyYAML==3.13
+pip install ansible==2.9.10
 pip install molecule==2.20.2
-pip install ansible ara django docker-py python-neutronclient \
+pip install junos-eznc==2.2.0
+
+
+pip install docker-py python-neutronclient \
   dynaconf shade pywinrm kerberos xmltodict boto pyvmomi \
+  subprocess-tee whitenoise \
   botocore apache-libcloud python-keyczar \
   passlib zabbix-api jxmlease dnspython \
   boto3 pysphere python-consul python-vagrant \
-  djangorestframework whitenoise \
-  psycopg2 django-cors-headers homebrew-pypi-poet
-```
-
+  homebrew-pypi-poet
 # Use poet to generate a list of resources and save the output
 
 ```
-poet ansible -a ara -a django -a docker-py -a python-neutronclient \
+poet ansible -a docker-py -a python-neutronclient \
   -a dynaconf -a shade -a pywinrm -a kerberos -a xmltodict -a boto -a pyvmomi \
-  -a django-cors-headers -a botocore -a apache-libcloud -a python-keyczar \
+  -a botocore -a apache-libcloud -a python-keyczar \
   -a passlib -a zabbix-api -a junos-eznc -a jxmlease -a dnspython \
   -a pysphere -a python-consul -a python-vagrant -a whitenoise \
-  -a djangorestframework -a djangorestframework-filters \
-  -a molecule -a psycopg2 -a boto3 > /tmp/poet.out
+  -a subprocess-tee -a molecule -a boto3 > /tmp/poet.out
 ```
 
 # Destroy the temporary virtual environment you just created
@@ -109,3 +104,7 @@ cp /usr/local/Homebrew/Library/Taps/nzrs/homebrew-sysops/ansibleINZ.rb .
 ```
 
 Commit and push your changes and then create a pull-request.
+
+
+molecule 3.5.2 requires subprocess-tee>=0.3.5, which is not installed.
+
